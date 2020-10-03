@@ -1,0 +1,14 @@
+<mvc:View controllerName="xyz.stuifzand.f1formula1.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<TileContainer id="container" tileDelete="handleTileDelete" tiles="{seasons>/MRData/SeasonTable/Seasons}">
+						<StandardTile title="{seasons>season}" />
+					</TileContainer>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
